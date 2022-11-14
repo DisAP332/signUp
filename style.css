@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.content {
+    width: 100vw;
+    height: 100vh;
+    color:aliceblue;
+}
+html {
+    font-size: 62.5%;
+}
+.flex {
+    display: flex;
+    height:100vh;
+}
+.top {
+    padding-left: 3vw;
+    padding-top: 8vh;
+    padding-bottom: 10vh;
+    flex-direction: column;
+}
+div.odinPic {
+    width:40vw;
+    height:max-content;
+    
+}
+
+.formCont {
+    float:right;
+    display:flex;
+    flex-direction: column;
+    width:60vw;
+    z-index:2;
+    background-color: black;
+    border: 2px solid #121212;
+    border-radius: 5px;
+}
+.form {
+    display: flex;
+    flex-flow: column wrap;
+    height:20vh;
+    padding-right: 130px;
+    padding-bottom: 60px;
+    padding-top: 30px;
+    background-color:  #121212;
+}
+.emphasized { font-style: italic; }
+.formGrid{
+    display: flex;
+    flex-flow: column wrap;
+    padding-left:2vw;
+    width: 40%;
+    font-size: 2rem;
+    padding-top:2vh;
+}
+h1 {
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 6vh;
+    padding-right: 10vw;
+    padding-bottom: 3vh;
+}
+h2 {
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+}
+.img {
+    position: fixed;
+    height:100vh;
+    width:40vw;
+    z-index: 1;
+}
+button {
+    background-color: black;
+    color: yellow;
+    font-size: 4rem;
+    padding: 10px 40px;
+    border: 2px solid yellow;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: yellow;
+    color:black;
+
+}
+.buttonCont {
+    padding-top: 5vh;
+    padding-left: 5vw;
+}
+.log-in{
+    padding-top: 3vh;
+    padding-left: 5vw;
+}
+p{
+    font-size: 2rem;
+}
+a {
+    font-size:2.8rem;
+    color: yellow;
+    font-weight: 700px;
+    text-decoration: none;
+}
