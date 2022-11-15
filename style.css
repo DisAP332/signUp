@@ -18,7 +18,7 @@
     font-size: 62.5%;
   }
   .pic {
-    background-image: url(/images/pic.jpeg);
+    background-image: url(./images/pic.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100vh;
