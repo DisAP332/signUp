@@ -1,105 +1,203 @@
-* {
-    margin: 0px;
-    padding: 0px;
-}
-.content {
+@font-face {
+    font-family: Odin;
+    src: url(Norse-Bold.otf);
+  }
+  * {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .content {
     width: 100vw;
     height: 100vh;
-    color:aliceblue;
-}
-html {
+    display: flex;
+    color: aliceblue;
+  }
+  html {
     font-size: 62.5%;
-}
-.flex {
+  }
+  .pic {
+    background-image: url(/images/pic.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    width: 40vw;
+  }
+  .logo {
+    width: 8vw;
+    height: 16vh;
+  }
+  .odinCont {
+    padding-top: 10em;
     display: flex;
-    height:100vh;
-}
-.top {
-    padding-left: 3vw;
-    padding-top: 8vh;
-    padding-bottom: 10vh;
-    flex-direction: column;
-}
-div.odinPic {
-    width:40vw;
-    height:max-content;
-    
-}
-
-.formCont {
-    float:right;
-    display:flex;
-    flex-direction: column;
-    width:60vw;
-    z-index:2;
+    justify-content: center;
+  }
+  .odin {
+    font-size: 16em;
+    font-family: 'Odin';
+  }
+  .signup {
+    height: 100vh;
     background-color: black;
-    border: 2px solid #121212;
-    border-radius: 5px;
-}
-.form {
+    width: 60vw;
+  }
+  .top {
+    padding-top: 3vh;
+    padding-left: 4vw;
+    padding-right: 5vw;
+  }
+  .top > .heading1, .heading2 {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 4vh;
+    padding-left: 3vw;
+  }
+  .heading1 {
+    font-size: 4.5em;
+  }
+  .heading2 {
+    font-size: 3em;
+    padding-bottom: 3em;
+  }
+  .form {
     display: flex;
     flex-flow: column wrap;
-    height:20vh;
-    padding-right: 130px;
-    padding-bottom: 60px;
-    padding-top: 30px;
+    height: 35vh;
+    padding-top: 3em;
     background-color:  #121212;
-}
-.emphasized { font-style: italic; }
-.formGrid{
+    padding-bottom: 3em;
+  }
+  .formGrid {
     display: flex;
     flex-flow: column wrap;
-    padding-left:2vw;
-    width: 40%;
-    font-size: 2rem;
-    padding-top:2vh;
-}
-h1 {
-    font-size: 4rem;
-    font-family: 'Poppins', sans-serif;
-    padding-top: 6vh;
-    padding-right: 10vw;
-    padding-bottom: 3vh;
-    padding-left: 2vw;
-}
-h2 {
-    font-size: 3rem;
-    padding-left: 2vw;
-    font-family: 'Poppins', sans-serif;
-}
-.img {
-    position: fixed;
-    height:100vh;
-    width:40vw;
-    z-index: 1;
-}
-button {
+    width: 50%;
+    padding-top: 2em;
+    padding-left: 5em;
+  }
+  .formGrid > label {
+    font-size: 3em;
+    padding-bottom: .3em;
+  }
+  .formGrid > input {
+    width: 80%;
+  }
+  
+  button {
     background-color: black;
     color: yellow;
     font-size: 4rem;
     padding: 10px 40px;
     border: 2px solid yellow;
     border-radius: 5px;
-}
-button:hover {
+  }
+  button:hover {
     background-color: yellow;
     color:black;
-
-}
-.buttonCont {
+  
+  }
+  .buttonCont {
     padding-top: 5vh;
-    padding-left: 5vw;
-}
-.log-in{
-    padding-top: 3vh;
-    padding-left: 5vw;
-}
-p{
-    font-size: 2rem;
-}
-a {
-    font-size:2.8rem;
-    color: yellow;
-    font-weight: 700px;
+    padding-left: 6vw;
+  }
+  .log-in > p {
+    padding-left: 6vw;
+    padding-top: 1em;
+    font-size: 4em;
+  }
+  .log-in > a {
+    padding-left: 6vw;
+    font-size: 3em;
     text-decoration: none;
-}
+    color: yellow;
+  }
+  
+  /* mobile stoof */
+  
+  @media only screen and (max-width: 950px) {
+    .content{
+      flex-flow: column;
+    }
+    .pic {
+      background-size: 100vw;
+      width: 100vw;
+      height: 40vh;
+    }
+    .odinCont {
+      display: flex;
+      justify-content: center;
+      padding-top: 1em;
+  
+    }
+    .signup {
+      background-color: black;
+      height: auto;
+      width: 100vw;
+      border-top: 0.6px solid yellow;
+      border-left: 0px;
+    }
+    .logo {
+      width: 20vw;
+      height: 9em;
+  
+    }
+    .odin {
+      font-family: Norse-Bold;
+      font-size: 9em;
+    }
+    .top > .heading1, .heading2 {
+      padding-left: 0em;
+      padding-top: 0em;
+      text-align: center;
+      padding-top: .5em;
+    }
+    .heading1 {
+      font-size: 3em;
+    }
+    .heading2 {
+      font-size: 2em;
+      padding-bottom: 1em;
+    }
+    .form {
+      flex-flow: column;
+      justify-content: center;
+      height: auto;
+      padding-top: 0px;
+    }
+    .formGrid {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      width: auto;
+      font-size: 2em;
+      padding-top:1em;
+      padding-left: 0px;
+    }
+    .formGrid > input {
+      width: 60%;
+    }
+    .formGrid > label {
+      font-size: 1em;
+  
+    }
+    .submitButton {
+      align-self: center;
+  
+    }
+    .buttonCont {
+      display: flex;
+      padding-top: 3em;
+      justify-content: center;
+      padding-left: 0px;
+    }
+    .log-in {
+      text-align: center;
+    }
+    .log-in > p {
+      font-size: 3em;
+      padding-left: 0;
+    }
+    .log-in > a {
+      padding-left: 0;
+    }
+  }
+  

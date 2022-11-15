@@ -1,65 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-<div class="content">
-    <div class="flex">
-        <div class="odinPic">
-            <img src="pic.jpeg" class="img">
-        </div>
-        <div class="formCont">
-            <div class="top" id="top">
-                <h1>
-                    Please fill out the form below and sign up for our wonderful
-                    service!
-                </h1>
-                <h2> Joining us makes you not only <em>Based!</em> <br> but <em>EPIC!</em></h2>
-            </div>
-                <form action="#" method="post">
-                    <div class="form">
-                        <!-- <p class="title">Lets go!</p> -->
-                        <div class="formGrid">
-                            <label for="first_name">FIRST NAME</label>
-                            <input type="text" id="first_name" name="first_name" placeholder="Joe.." required>
-                        </div>
-                        <div class="formGrid">
-                            <label for="phone_number">PHONE NUMBER</label>
-                            <input type="number" max.length=10 id="phone_number" name='phone_number'placeholder="xxx-xxx-xxxx" required>
-                        </div>
-                        <div class="formGrid">
-                            <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name='password' placeholder="password" required>
-                        </div>
-                        <div class="formGrid">
-                            <label for="last_name">LAST NAME</label>
-                            <input type="text" id="last_name" name='last_name' placeholder="Smoe..." required>
-                        </div>
-                        <div class="formGrid">
-                            <label for="email">EMAIL</label>
-                            <input type="email" id="email" name='email' placeholder="email@email.com" required>
-                        </div>
-                        <div class="formGrid">
-                            <label for="confirm_pass">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm_pass" name='confirm_pass' placeholder="" required>
-                        </div>
-                    </div>
-                </form>
-            <div class='buttonCont'>
-                <button type="submit" class="submitButton" for="form">Create Account</button>
-            </div>
-            <div class="log-in">
-                <p>Already have an account?</p>
-                <a href="#">Log in!</a>
-            </div>
-        <div>
-    </div>   
-</div> 
+  <div class="content">
+    <div class="pic">
+      <div class="odinCont">
+        <img src="/images/odin-lined.png" class="logo">
+        <h1 class="odin"> ODIN </h1>
+      </div>
+    </div>
+    <div class="signup">
+      <div class="top">
+            <h1 class="heading1">Please fill out the form below and sign up for our wonderful
+              service!</h1>
+            <h2 class="heading2"> Joining us makes you not only <em>Based!</em> <br> but <em>EPIC!</em></h2>
+      </div>
+
+
+      <div class="formContent">
+        <form action="#" method="post">
+          <div class="form">
+              <!-- <p class="title">Lets go!</p> -->
+              <div class="formGrid">
+                  <label for="first_name">FIRST NAME</label>
+                  <input type="text" id="first_name" name="first_name" placeholder="Joe.." required>
+              </div>
+              <div class="formGrid">
+                  <label for="phone_number">PHONE NUMBER</label>
+                  <input type="number" max.length=10 id="phone_number" name='phone_number'placeholder="xxx-xxx-xxxx" required>
+              </div>
+              <div class="formGrid">
+                  <label for="password">PASSWORD</label>
+                  <input type="password" id="password" name='password' placeholder="password" required>
+              </div>
+              <div class="formGrid">
+                  <label for="last_name">LAST NAME</label>
+                  <input type="text" id="last_name" name='last_name' placeholder="Smoe..." required>
+              </div>
+              <div class="formGrid">
+                  <label for="email">EMAIL</label>
+                  <input type="email" id="email" name='email' placeholder="email@email.com" required>
+              </div>
+              <div class="formGrid">
+                  <label for="confirm_pass">CONFIRM PASSWORD</label>
+                  <input type="password" id="confirm_pass" name='confirm_pass' placeholder="" required>
+              </div>
+          </div>
+      </form>
+
+
+      <div class='buttonCont'>
+        <button type="submit" class="submitButton">Create Account</button>
+      </div>
+      <div class="log-in">
+        <p>Already have an account?</p>
+        <a href="#">Log in!</a>
+      </div>
+
+
+      </div>
+    </div>
+  </div>
 </body>
 <script src="java.js"></script>
 </html>
